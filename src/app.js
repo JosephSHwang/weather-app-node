@@ -30,14 +30,14 @@ app.get("", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: `A page that's all about me`,
+    title: `About Weather App`,
     name: "Joseph Hwang",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "The most helpful help page",
+    title: "Got questions?",
     message:
       "Thanks for visiting my page, this was here so that I can learn more about express and handlebars.  ",
   });

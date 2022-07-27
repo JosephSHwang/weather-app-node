@@ -62,3 +62,24 @@ button {
     padding: 8px;
     margin: 5px;
 }
+
+.icon {
+    height: 80px;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-title {
+    
+}
+
+.footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+}
