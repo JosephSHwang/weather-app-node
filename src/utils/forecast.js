@@ -9,13 +9,14 @@ const forecast = (lat, lng, callback) => {
         } else if (body.error) {
             callback(body.error.info)
         } else {
-            const description = body.current.weather_descriptions[0]
+            const description = body.current.weather_descriptions[0]            
             // const currentTemp = response.body.current.temperature
             // const feelsLike = response.body.current.feelslike
-
-            const { temperature: currentTemp, feelslike: feelsLike } = body.current
             
-            callback(undefined, `It's curently ${description}.  The outside temperature is ${currentTemp}°F with a real feel temp of ${feelsLike}°F`)    
+            const { temperature: currentTemp, feelslike: feelsLike, humidity } = body.current
+            
+            
+            callback(undefined, `It's curently ${description}.  The outside temperature is ${currentTemp}°F with a real feel temp of ${feelsLike}°F.  The humidity is ${humidity}%.`)    
         }
     })
 }

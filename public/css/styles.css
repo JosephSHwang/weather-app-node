@@ -74,8 +74,9 @@ button {
     gap: 16px;
 }
 
-.header-title {
-    
+#weather-icon {
+    height: 25px;
+    width: 25px;
 }
 
 .footer {
